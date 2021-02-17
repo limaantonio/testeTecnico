@@ -2,10 +2,13 @@ package com.example.teste.domain;
 
 import java.io.Serializable;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-@Document(collection = "info")
+@Entity
 public class Info implements Serializable {
 	/**
 	 * 
@@ -13,7 +16,8 @@ public class Info implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private String id;
+	 @GeneratedValue(strategy = GenerationType.AUTO)
+	private Integer id;
 	private Integer logic;
 	private String serial;
 	private String model;
@@ -29,9 +33,9 @@ public class Info implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Info(String id, Integer logic, String serial, String model, Integer sam, String ptid, Integer plat,
+	public Info(Integer id, Integer logic, String serial, String model, Integer sam, String ptid, Integer plat,
 			String version, Integer mxr, Integer mxf, String verfm) {
-		super();
+		
 		this.id = id;
 		this.logic = logic;
 		this.serial = serial;
@@ -44,12 +48,28 @@ public class Info implements Serializable {
 		this.mxf = mxf;
 		this.verfm = verfm;
 	}
+	
+	public Info( Integer logic, String serial, String model, Integer sam, String ptid, Integer plat,
+			String version, Integer mxr, Integer mxf, String verfm) {
+		
+		
+		this.logic = logic;
+		this.serial = serial;
+		this.model = model;
+		this.sam = sam;
+		this.ptid = ptid;
+		this.plat = plat;
+		this.version = version;
+		this.mxr = mxr;
+		this.mxf = mxf;
+		this.verfm = verfm;
+	}
 
-	public String getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -216,7 +236,5 @@ public class Info implements Serializable {
 			return false;
 		return true;
 	}
-
-	
 
 }

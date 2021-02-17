@@ -1,10 +1,10 @@
-package com.example.teste;
+package com.example.sqlitedemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TesteTecnicoMuxiApplicationTests {
+class SqlitedemoApplicationTests {
 
 	@Test
 	void contextLoads() {

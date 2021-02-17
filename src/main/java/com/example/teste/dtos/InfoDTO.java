@@ -9,7 +9,7 @@ public class InfoDTO implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String id;
+	
 	private Integer logic;
 	private String serial;
 	private String model;
@@ -26,7 +26,6 @@ public class InfoDTO implements Serializable {
 	}
 
 	public InfoDTO(Info obj) {
-		id = obj.getId();
 		logic = obj.getLogic();
 		serial = obj.getSerial();
 		model = obj.getModel();
@@ -37,15 +36,10 @@ public class InfoDTO implements Serializable {
 		mxr = obj.getMxr();
 		mxf = obj.getMxf();
 		verfm = obj.getVerfm();
+		
 	}
 
-	public String getId() {
-		return id;
-	}
 
-	public void setId(String id) {
-		this.id = id;
-	}
 
 	public Integer getLogic() {
 		return logic;

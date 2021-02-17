@@ -3,17 +3,14 @@ package com.example.teste.config;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 
 import com.example.teste.domain.Info;
-import com.example.teste.repository.InfoRepository;
+import com.example.teste.infoRepository.InfoRepository;
 
-public class Instantiation implements CommandLineRunner {
-
+public class Instantiation {
 	@Autowired
 	private InfoRepository infoRepository;
 
-	@Override
 	public void run(String... args) throws Exception {
 		infoRepository.deleteAll();
 		
