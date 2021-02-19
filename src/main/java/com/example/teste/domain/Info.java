@@ -8,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import com.sun.istack.NotNull;
+
 @Entity
 public class Info implements Serializable {
 	/**
@@ -18,6 +20,9 @@ public class Info implements Serializable {
 	@Id
 	 @GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
+	
+	@NotNull
+	@Column(name="Logic", nullable = false)
 	private Integer logic;
 	private String serial;
 	private String model;
@@ -47,6 +52,12 @@ public class Info implements Serializable {
 		this.mxr = mxr;
 		this.mxf = mxf;
 		this.verfm = verfm;
+	}
+	
+	public Info(Integer id, Integer logic) {
+		this.id = id;
+		this.logic = logic;
+		
 	}
 	
 	public Info( Integer logic, String serial, String model, Integer sam, String ptid, Integer plat,
