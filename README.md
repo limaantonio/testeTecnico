@@ -23,7 +23,7 @@ simples que gerencia determinados Dados, aqui denominados (Terminal). Atráves d
 - [JUnit-5](https://junit.org/junit5/')
 - [REST Assured](https://rest-assured.io/')
 - [Swagger](https://swagger.io/specification/')
-
+- [JSON Schema](https://json-schema.org/')
 
 ## 📦 Como baixar o projeto
 
