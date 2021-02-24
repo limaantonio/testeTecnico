@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "logic": {
+      "type": "integer"
+    },
+    "serial": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "logic",
+    "serial",
+    "model"
+  ]
+}

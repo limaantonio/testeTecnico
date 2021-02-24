@@ -1,0 +1,3 @@
+DELETE FROM info;
+
+ALTER SEQUENCE info_id_seq RESTART WITH 1;
