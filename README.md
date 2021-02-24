@@ -12,18 +12,17 @@
 ## 🗒 Sobre
 
 
-O **Desafio Muxi** consiste em uma API 
-simples que gerencia determinado Dados, aqui denominados (Info). Atráves dos end-points fornecidos pela API é possivel Cadastrar, Listar, Listar por um determinado atributo (LOGIC) e Atualizar. Esta API foi desenvolvida focada nas melhores práticas de programação, aplicando conceitos de SOLID e TDD.
----
+O **Desafio Muxi** consiste em uma API
+simples que gerencia determinados Dados, aqui denominados (Terminal). Atráves dos end-points fornecidos pela API é possivel Cadastrar, Listar, Listar por um determinado atributo (LOGIC) e Atualizar. Esta API foi desenvolvida focada nas melhores práticas de programação, aplicando conceitos de SOLID e TDD.
 
 ## 🔗  Tecnologias utilizadas
 
-- [Java]('https://www.java.com/pt-BR/')
-- [Spring Boot]('https://spring.io/projects/spring-boot')
-- [HSQLDB]('http://hsqldb.org/')
-- [JUnit-5]('https://junit.org/junit5/')
-- [REST Assured]('https://rest-assured.io/')
-- [Swagger]('https://swagger.io/specification/')
+- [Java](https://www.java.com/pt-BR/')
+- [Spring Boot](https://spring.io/projects/spring-boot')
+- [HSQLDB](http://hsqldb.org/')
+- [JUnit-5](https://junit.org/junit5/')
+- [REST Assured](https://rest-assured.io/')
+- [Swagger](https://swagger.io/specification/')
 
 
 ## 📦 Como baixar o projeto
@@ -48,12 +47,12 @@ simples que gerencia determinado Dados, aqui denominados (Info). Atráves dos en
 ```
   Todas as requisições do POST para está API devem ter o cabeçalho Content-Type: application/json.A API contém as seguintes rotas:
   
-  Rotas Info:
+  Rotas TERMINAL:
   
-  * GET api/v1/infos : lista todas as INFOS cadastradas
-  * GET api/v1/info/[logic] : lista INFO de acordo com o atributos (LOGIC) informado
-  * POST api/v1/tool/[logic] : cria uma nova INFO
-  * PUT api/v1/tool/[logic] : atualiza uma INFO de acordo com o atributos (LOGIC) informado
+  * GET api/v1/terminais : lista todas os TERMINAIS cadastradas
+  * GET api/v1/terminal/[logic] : lista um TERMINAL de acordo com o atributos (LOGIC) informado
+  * POST api/v1/terminal/[logic] : cria um novo TERMINAL
+  * PUT api/v1/terminal/[logic] : atualiza um TERMINAL de acordo com o atributos (LOGIC) informado
 
   Documentação:
   * GET /swagger-ui.html: rota para visualizar a documentação da API
@@ -62,7 +61,7 @@ simples que gerencia determinado Dados, aqui denominados (Info). Atráves dos en
 
 ## 🗒 Documentação
 
-Teste a aplicação através da documentação: 
+Teste a aplicação através da documentação:
 
 
 
