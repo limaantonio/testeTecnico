@@ -61,7 +61,7 @@ simples que gerencia determinados Dados, aqui denominados (Terminal). Atráves d
 
 ## 🗒 Documentação
 
-Teste a aplicação através da documentação: https://desafio-tec-muxi.herokuapp.com/swagger-ui.html
+Teste a aplicação através da documentação: https://desafio-tec-muxi.herokuapp.com/swagger-ui.html#/terminal-resource
 
 
 
