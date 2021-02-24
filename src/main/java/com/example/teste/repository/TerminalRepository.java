@@ -11,11 +11,7 @@ import java.util.Optional;
 
 @Repository
 public interface TerminalRepository extends  JpaRepository<Terminal, Long> {
-
     @Query("SELECT b FROM Terminal b WHERE b.logic = :logic")
     Optional<Terminal> findByLogic(@Param("logic") Integer logic);
-
-
-
 
 }

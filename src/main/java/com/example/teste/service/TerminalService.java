@@ -6,7 +6,7 @@ import com.example.teste.service.exception.LogicNaoEncontradoException;
 
 import java.util.List;
 
-public interface InfoService {
+public interface TerminalService {
 
     List<Terminal> buscarTodos();
 

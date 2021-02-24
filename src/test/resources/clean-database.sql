@@ -1,3 +1,3 @@
-DELETE FROM info;
+DELETE FROM terminal;
 
-ALTER SEQUENCE info_id_seq RESTART WITH 1;
+ALTER SEQUENCE terminal_id_seq RESTART WITH 1;

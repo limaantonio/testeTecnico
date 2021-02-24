@@ -5,7 +5,7 @@ import java.io.Serializable;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "info")
+@Table(name = "terminal")
 public class Terminal implements Serializable {
 
 	@Id
@@ -46,6 +46,13 @@ public class Terminal implements Serializable {
 		this.logic = logic;
 		this.serial = serial;
 		this.model = model;
+		this.sam = sam;
+		this.ptid = ptid;
+		this.plat = plat;
+		this.version = version;
+		this.mxr = mxr;
+		this.mxf = mxf;
+		this.verfm = verfm;
 	}
 
 	public Long getId() {
@@ -78,6 +85,62 @@ public class Terminal implements Serializable {
 
 	public void setModel(String model) {
 		this.model = model;
+	}
+
+	public Integer getSam() {
+		return sam;
+	}
+
+	public void setSam(Integer sam) {
+		this.sam = sam;
+	}
+
+	public String getPtid() {
+		return ptid;
+	}
+
+	public void setPtid(String ptid) {
+		this.ptid = ptid;
+	}
+
+	public Integer getPlat() {
+		return plat;
+	}
+
+	public void setPlat(Integer plat) {
+		this.plat = plat;
+	}
+
+	public String getVersion() {
+		return version;
+	}
+
+	public void setVersion(String version) {
+		this.version = version;
+	}
+
+	public Integer getMxr() {
+		return mxr;
+	}
+
+	public void setMxr(Integer mxr) {
+		this.mxr = mxr;
+	}
+
+	public Integer getMxf() {
+		return mxf;
+	}
+
+	public void setMxf(Integer mxf) {
+		this.mxf = mxf;
+	}
+
+	public String getVerfm() {
+		return verfm;
+	}
+
+	public void setVerfm(String verfm) {
+		this.verfm = verfm;
 	}
 
 	@Override

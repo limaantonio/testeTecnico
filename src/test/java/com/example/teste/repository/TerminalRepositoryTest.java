@@ -19,10 +19,10 @@ import java.util.Optional;
 public class TerminalRepositoryTest {
     
     @Autowired
-    private InfoRepository sut;
+    private TerminalRepository sut;
 
     @Test
-    public void deve_procurar_um_info_pelo_atributo_logic() throws Exception {
+    public void deve_procurar_um_terminal_pelo_atributo_logic() throws Exception {
         Optional<Terminal> optional = sut.findByLogic(44332211);
 
         assertThat(optional.isPresent()).isTrue();
@@ -31,6 +31,15 @@ public class TerminalRepositoryTest {
         assertThat(terminal.getModel()).isEqualTo("PWWIN");
         assertThat(terminal.getLogic()).isEqualTo(44332211);
         assertThat(terminal.getSerial()).isEqualTo("123");
+        assertThat(terminal.getSam()).isEqualTo(0);
+        assertThat(terminal.getPtid()).isEqualTo("F04A2E4088B");
+        assertThat(terminal.getPlat()).isEqualTo(4);
+        assertThat(terminal.getVersion()).isEqualTo("8.00b3");
+        assertThat(terminal.getMxr()).isEqualTo(0);
+        assertThat(terminal.getMxf()).isEqualTo(16777216);
+        assertThat(terminal.getVerfm()).isEqualTo("PWWIN");
+
+
     }
 
     @Test
