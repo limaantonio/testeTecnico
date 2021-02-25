@@ -25,7 +25,7 @@ simples que gerencia determinados Dados, aqui denominados (Terminal). Atráves d
 - [Swagger](https://swagger.io/specification/')
 - [JSON Schema](https://json-schema.org/')
 
-## 📦 Como baixar o projeto
+## 📦 Como baixar o projeto e executar a aplicação
 
 * Java version 11.0.10
 
@@ -46,6 +46,9 @@ simples que gerencia determinados Dados, aqui denominados (Terminal). Atráves d
   -                 test\resource\TerminalResource para executar os testes de integração
 
 ```
+
+A aplicação encontra-se hospeadado no **Heroku**, portanto é possivel utilizar a **API em produção**, acesse: https://desafio-tec-muxi.herokuapp.com/api/v1
+
 
 ## 🚀 Rotas
 
