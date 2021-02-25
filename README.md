@@ -6,8 +6,9 @@
 - [Sobre](#-Sobre)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Como baixar o projeto](#-como-baixar-o-projeto-e-executar-a-aplicação)
+- [API](#-api)
 - [Rotas](#-rotas)
-- [Documentação](#-documentacao)
+- [Documentação](#-documentação)
 
 
 ## 🗒 Sobre
