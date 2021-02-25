@@ -4,9 +4,10 @@
 
 # Indice
 - [Sobre](#-Sobre)
-- [Tecnologias Utilizadas](#-tecnologias-Utilizadas)
-- [Como baixar o projeto](#-como-baixar-o-projeto)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Como baixar o projeto](#-como-baixar-o-projeto-e-executar-a-aplicação)
 - [Rotas](#-rotas)
+- [Documentação](#-documentacao)
 
 
 ## 🗒 Sobre
