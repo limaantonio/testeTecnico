@@ -43,9 +43,9 @@ simples que gerencia determinados Dados, aqui denominados (Terminal). Atráves d
   Abra o projeto na IDE de sua preferência e execute a aplicação
   
   ##Executando os testes: 
-  - Vá até a pasta: test\repository\TerminalRepository para executar os testes unitários
-  -                 test\service\TerminalService para executar os testes unitários
-  -                 test\resource\TerminalResource para executar os testes de integração
+  - Vá até a pasta: test\repository\TerminalRepositoryTest para executar os testes unitários
+  -                 test\service\TerminalServiceTest para executar os testes unitários
+  -                 test\resource\TerminalResourceTest para executar os testes de integração
 
 ```
 
