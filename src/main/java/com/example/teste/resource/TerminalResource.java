@@ -18,6 +18,7 @@ import java.net.URI;
 import java.util.List;
 
 @RestController
+@RequestMapping(value = "/")
 public class TerminalResource {
     @Autowired
     private TerminalService terminalService;
@@ -25,13 +26,7 @@ public class TerminalResource {
     @Autowired
     private TerminalRepository terminalRepository;
 
-    @RequestMapping("/api/v1")
-    @ResponseBody
-    public String index(){
-        return "Bem-vindo à API Teste Técnico Muxi!";
-    }
-
-    @GetMapping("/api/v1/terminais")
+    @GetMapping("api/v1/terminais")
     @ApiOperation(code = 200, value = "Retorna uma lista com todas as terminals cadastradas.", response = Terminal[].class)
     @ApiResponse(code = 500, message = "Foi gerada uma exceção")
     public ResponseEntity<List<Terminal>> bucarTodos(){

@@ -22,7 +22,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                     .apis(RequestHandlerSelectors.basePackage("com.example.teste.resource"))
-                    .paths(PathSelectors.any())
+                    .paths(regex("/api/v1/termina.*"))
                     .build()
                 .apiInfo(metaData());
     }

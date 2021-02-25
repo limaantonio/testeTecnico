@@ -16,7 +16,7 @@ public class TerminalResourceTest extends TesteApplicationTests {
     @Test
     public void deve_retornar_lista_de_terminals()throws Exception {
         given()
-                .get("/api/v1/terminals")
+                .get("api/v1/terminais")
                 .then()
                 .log().body().and()
                 .and()
@@ -27,7 +27,7 @@ public class TerminalResourceTest extends TesteApplicationTests {
     public void deve_procurar_objeto_pelo_atributo_logic() throws  Exception{
         given()
                 .pathParam("logic", 44332211)
-        .get("/api/v1/terminal/{logic}")
+        .get("api/v1/terminal/{logic}")
         .then()
                 .log().body().and()
                 .statusCode(HttpStatus.OK.value())
@@ -39,7 +39,7 @@ public class TerminalResourceTest extends TesteApplicationTests {
     public void deve_retornar_erro_nao_encontrado_quando_buscar_atributo_logic_inexistente() throws Exception {
         given()
                 .pathParam("logic", 12)
-        .get("/api/v1/terminal/{logic}")
+        .get("api/v1/terminal/{logic}")
         .then()
                 .log().body().and()
                 .statusCode(HttpStatus.NOT_FOUND.value())
@@ -57,7 +57,7 @@ public class TerminalResourceTest extends TesteApplicationTests {
                 .header("Content-type", ContentType.TEXT)
                 .body(terminal)
         .when()
-        .post("/api/v1/terminal/")
+        .post("api/v1/terminal/")
         .then()
                 .log().headers()
             .and()
@@ -90,7 +90,7 @@ public class TerminalResourceTest extends TesteApplicationTests {
                 .body(terminal)
                 .when()
                 .pathParam("logic", 44332211)
-                .put("/api/v1/terminal/{logic}")
+                .put("api/v1/terminal/{logic}")
                 .then()
                 .log().headers()
                 .and()
