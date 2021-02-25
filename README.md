@@ -6,7 +6,7 @@
 - [Sobre](#-Sobre)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
 - [Como baixar o projeto](#-como-baixar-o-projeto-e-executar-a-aplicação)
-- [API](#-API)
+- [API](#-api)
 - [Rotas](#-rotas)
 - [Documentação](#-documentação)
 
@@ -49,8 +49,7 @@ simples que gerencia determinados Dados, aqui denominados (Terminal). Atráves d
 
 ```
 
-## 
-![favicon-16x16](https://github.com/heroku/favicon/raw/master/favicon.iconset/icon_16x16.png) API
+## ![favicon-16x16](https://github.com/heroku/favicon/raw/master/favicon.iconset/icon_16x16.png) API
 
 A aplicação encontra-se hospeadado no **Heroku**, portanto é possivel utilizar a **API em produção**, acesse: https://desafio-tec-muxi.herokuapp.com/api/v1
 
